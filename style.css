@@ -1,0 +1,115 @@
+body{margin:0; padding:0; font-family: Helvetica, Times, serif;}
+
+/* LAYOUT */
+
+.row{background:#EAF1FJ; width:100%; margin: 0 auto;}
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+	
+[class*="col-"] {
+    float: left;
+	/*border: 1px solid;*/
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/* If the screen size is 601px or more, set the font-size */
+@media only screen and (min-width: 601px) {
+  div.row{
+    font-size: 14px;
+	line-height: 18px;
+  }
+  h2{
+  font-size: 12px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size */
+@media only screen and (max-width: 600px) {
+  div.row{
+  font-size: 24px;
+  line-height: 28px;
+  }
+  h2{
+  font-size: 20px;
+  }
+}
+
+#header{
+width: 100%;
+height: 21px;
+padding-top: 29px;
+background: #4286f4;
+color: #fff;
+font-size: 13px;
+line-height: 18px;
+}
+
+/*	STYLING */
+
+.block{
+padding: 8px 0 3px 0;
+border-bottom: dotted 1px #555;
+margin-bottom: 3px;
+}
+
+  .blocktop{
+  padding: 0 0 4px 0;
+  border-bottom: dotted 1px #555;
+  }
+  
+  .blockhead {
+  width: 80%;
+  }
+  
+.content{
+padding: 0 30px 0 30px;	
+}
+
+.photo{
+margin: 30px auto 0 auto; 
+text-align:center;
+}
+
+h1{
+font-size: 28px;
+font-weight: normal;
+line-height: 30px;
+}
+
+h2{
+text-transform: uppercase; 
+color: #777;
+border-bottom: dotted 1px;
+}
+
+a {
+color: #4286f4;
+text-decoration: none;
+}
+      
+a:hover {
+color: #1065ef;
+text-decoration: underline; 
+font-weight: normal;
+}
